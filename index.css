@@ -209,12 +209,13 @@ h1 {
 .carrossel {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 180px;
+    aspect-ratio: 16/9; 
 }
 
 .carousel-img {
@@ -222,7 +223,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 180px;
+    height: 100%;     
     object-fit: cover;
     border-radius: 8px;
     opacity: 0;
@@ -243,8 +244,9 @@ h1 {
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     user-select: none;
+    z-index: 10; 
 }
 
 .carousel-btn.left {
@@ -256,17 +258,19 @@ h1 {
 }
 
 .carousel-btn:hover {
-    background: rgba(89,197,199,0.5);
+    background: rgba(89,197,199,0.6);
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
+
     .carousel-container {
-        height: 150px;
+        aspect-ratio: 4/3;
     }
 
-    .carousel-img {
-        height: 150px;
+    .carousel-btn {
+        font-size: 24px;
+        padding: 4px 8px;
     }
 }
 
