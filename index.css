@@ -185,7 +185,7 @@ h1 {
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 12px; /*MUDEI AQUI*/
 }
 
 /* TÍTULOS DOS CARDS */
@@ -266,7 +266,7 @@ h1 {
     }
 
     .carousel-img {
-        height: 150px;
+        height: 120px; /*MUDEI AQUI*/
     }
 }
 
